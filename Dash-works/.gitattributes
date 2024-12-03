@@ -1,0 +1,36 @@
+# Handle line endings
+
+# Text files: Use LF in the repository
+*.js      text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=lf
+*.tsx     text eol=lf
+*.html    text eol=lf
+*.css     text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+*.yaml    text eol=lf
+*.yml     text eol=lf
+*.sh      text eol=lf
+*.Dockerfile text eol=lf
+
+# Binary files: Do not apply line-ending conversions
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.svg     binary
+*.pdf     binary
+*.zip     binary
+*.tar     binary
+*.gz      binary
+*.woff    binary
+*.woff2   binary
+
+# Ignore auto line-ending conversion for certain files
+*.exe     -text
+*.dll     -text
+
+# Default behavior: Detect file type and normalize text
+* text=auto
